@@ -23,6 +23,14 @@ SET time_zone = "+00:00";
 
 -- --------------------------------------------------------
 
+---
+--- L'admin de la BDD
+---
+
+CREATE USER 'adminbdd'@'localhost' IDENTIFIED BY 'bddconnect';
+GRANT PRIVILEGES ON ecolebdd.* TO 'adminbdd'@'localhost';
+FLUSH PRIVILEGES;
+
 --
 -- Structure de la table `admin`
 --
