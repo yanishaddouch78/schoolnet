@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 ---
 
 CREATE USER 'adminbdd'@'localhost' IDENTIFIED BY 'bddconnect';
-GRANT PRIVILEGES ON ecolebdd.* TO 'adminbdd'@'localhost';
+GRANT ALL PRIVILEGES ON ecolebdd.* TO 'adminbdd'@'localhost';
 FLUSH PRIVILEGES;
 
 --
