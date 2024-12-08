@@ -27,9 +27,11 @@ SET time_zone = "+00:00";
 --- L'admin de la BDD
 ---
 
+DROP USER IF EXISTS 'adminbdd'@'localhost';
 CREATE USER 'adminbdd'@'localhost' IDENTIFIED BY 'bddconnect';
 GRANT ALL PRIVILEGES ON ecolebdd.* TO 'adminbdd'@'localhost';
 FLUSH PRIVILEGES;
+
 
 --
 -- Structure de la table `admin`
