@@ -206,7 +206,7 @@ $eleve = $result->fetch_assoc();
                         echo "<td>" . htmlspecialchars($row['Nom']) . "</td>";
                         echo "<td>" . htmlspecialchars($row['commentaire']) . "</td>";
                         echo "<td class='action-column'>"; // Nouvelle colonne
-                        echo "<a href='delete_note.php?id_eleve=".htmlspecialchars($row['id_eleve'])."&id_appreciation=" . htmlspecialchars($row['id_appreciation']) . "' class='delete-icon' title='Supprimer'>";
+                        echo "<a href='delete_appreciation.php?id_eleve=".htmlspecialchars($row['id_eleve'])."&id_appreciation=" . htmlspecialchars($row['id_appreciation']) . "' class='delete-icon' title='Supprimer'>";
                         echo "<span class='material-symbols-outlined'>delete</span>"; 
                         echo "</a>";
                         echo "</td>";
